@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.IO.Compression;
 
 namespace Copy
 {
@@ -24,11 +25,15 @@ namespace Copy
         {
             using (initialFile)
             {
+                initialFile.Multiselect = true;
+
                 if (initialFile.ShowDialog() == DialogResult.OK)
                 {
-                    // This is the initial path directory.
-                    MessageBox.Show(initialFile.FileName);
-                }
+                    foreach (String file in initialFile.FileNames)
+                    {
+                        Console.WriteLine("Hola");
+                    }
+                }       
             }
         }
 
@@ -39,16 +44,46 @@ namespace Copy
                 if (finalFile.ShowDialog() == DialogResult.OK)
                 {
                     // This is the final path directory.
-                    MessageBox.Show(finalFile.SelectedPath);
+                    introductControlLabel.Visible = true;
+                    copyButton.Visible = true;
+                    compressButton.Visible = true;
+                    extractButton.Visible = true;
                 }
             }
         }
 
         private void copyButton_Click(object sender, EventArgs e)
         {
-            File.Move(initialFile.FileName, finalFile.SelectedPath + "/" + initialFile.SafeFileName);
-            MessageBox.Show("Completat");
+            foreach (String file in initialFile.FileNames)
+            {
+                // Selects the file path (file) and the name and extension of the file (fileName)
+                // from each selected file.
+                string fileName = Path.GetFileName(file);
+                File.Move(file, finalFile.SelectedPath + "/" + fileName);
+            }
+            MessageBox.Show("Mogut!");
+            
         }
 
+        private void compressButton_Click(object sender, EventArgs e)
+        {
+            Directory.CreateDirectory(finalFile.SelectedPath + "/hola");
+            foreach (String file in initialFile.FileNames)
+            {
+                string fileName = Path.GetFileName(file);
+                File.Move(file, finalFile.SelectedPath + "/hola/" + fileName);
+            }
+
+            ZipFile.CreateFromDirectory(finalFile.SelectedPath + "/hola", finalFile.SelectedPath + "/hola.zip");
+            Directory.Delete(finalFile.SelectedPath + "/hola", true);
+            MessageBox.Show("Comprimit!");
+        }
+
+        private void extractButton_Click(object sender, EventArgs e)
+        {
+            ZipFile.ExtractToDirectory(initialFile.FileName, finalFile.SelectedPath);
+            File.Delete(initialFile.FileName);
+            MessageBox.Show("Descomprimit!");
+        }
     }
 }
