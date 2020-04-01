@@ -18,3 +18,13 @@ C:\Users\aleix\Documents\GitHub\Copy\obj\Debug\Copy.csproj.GenerateResource.cach
 C:\Users\aleix\Documents\GitHub\Copy\obj\Debug\Copy.csproj.CoreCompileInputs.cache
 C:\Users\aleix\Documents\GitHub\Copy\obj\Debug\Copy.exe
 C:\Users\aleix\Documents\GitHub\Copy\obj\Debug\Copy.pdb
+C:\Users\aleix\Documents\GitHub\NewControl\bin\Debug\NewControl.exe.config
+C:\Users\aleix\Documents\GitHub\NewControl\bin\Debug\NewControl.exe
+C:\Users\aleix\Documents\GitHub\NewControl\bin\Debug\NewControl.pdb
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\Copy.csprojAssemblyReference.cache
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\Copy.Form1.resources
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\NewControl.Properties.Resources.resources
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\Copy.csproj.GenerateResource.cache
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\Copy.csproj.CoreCompileInputs.cache
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\NewControl.exe
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Debug\NewControl.pdb
