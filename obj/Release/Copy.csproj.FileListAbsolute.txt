@@ -1,0 +1,10 @@
+C:\Users\aleix\Documents\GitHub\NewControl\bin\Release\NewControl.exe.config
+C:\Users\aleix\Documents\GitHub\NewControl\bin\Release\NewControl.exe
+C:\Users\aleix\Documents\GitHub\NewControl\bin\Release\NewControl.pdb
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\Copy.csprojAssemblyReference.cache
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\Copy.Form1.resources
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\NewControl.Properties.Resources.resources
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\Copy.csproj.GenerateResource.cache
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\Copy.csproj.CoreCompileInputs.cache
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\NewControl.exe
+C:\Users\aleix\Documents\GitHub\NewControl\obj\Release\NewControl.pdb
